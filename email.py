@@ -3,11 +3,6 @@ import re
 
 
 def email(file_name):
-    """
-
-    :param file_name:
-    :return: valid for a valid email address and invalid for an invalid email address
-    """
 
     """
     >>> email("file.txt")
@@ -17,6 +12,11 @@ def email(file_name):
     abc.def@mail-archive.com is valid
     abc.def@mail#archive.com is invalid
     hgvgv@hgv@hcyf.com is invalid
+    """
+    
+    """
+    :param file_name:
+    :return: valid for a valid email address and invalid for an invalid email address
     """
 
     words = open(file_name, "r").read().split()
